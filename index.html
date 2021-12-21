@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            var stroka = prompt("Введите строку");
+            var regexp = /([^\S.]|^)(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)([^\S.]|$)/ig;
+            var otbor = stroka.match(regexp);
+            alert(otbor + " - правильный IP-адрес");
+        </script>
+    </head>
+<body>
+
+</body>
+</html>
